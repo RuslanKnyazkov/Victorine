@@ -6,4 +6,3 @@ import os
 load_dotenv(dotenv_path='../protect.env')
 
 TOKEN = os.getenv('TOKEN')
-
