@@ -1,6 +1,4 @@
 .idea/
 venv/
 protect.env
-Victorine/__pycache__/
-app/__pycache__/
-Config/__pycache__/
+__pycache__/
