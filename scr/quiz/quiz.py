@@ -2,7 +2,7 @@ from copy import deepcopy
 import telebot.types
 from scr.quiz.question import questions
 from random import choice
-
+from scr.config.logs import logger
 
 class Animal:
     def __init__(self):
@@ -22,7 +22,7 @@ class Animal:
         self.__collection_questions = deepcopy(questions)
 
     @property
-    def questions(self):
+    def get_questions(self):
         """
         Return list.
         """
@@ -38,6 +38,9 @@ class Quiz:
 
     @classmethod
     def restart(cls):
+        """
+        Create new templates when user choise start new quiz.
+        """
         if cls.datacls is not None:
             cls.datacls = None
         cls.datacls = Animal()
@@ -46,7 +49,7 @@ class Quiz:
         """
         Check length object.
         """
-        if self.datacls.questions:
+        if self.datacls.get_questions:
             return True
         return False
 
@@ -54,17 +57,17 @@ class Quiz:
         """
         Return random question.
         """
-        return choice(self.datacls.questions)
+        return choice(self.datacls.get_questions)
 
     def find_overlap(self, callback: telebot.TeleBot.callback_query_handler):
         """
         Find in iterable object.
         """
-        for i in range(len(self.datacls.questions)):
-            for elem in self.datacls.questions[i].values():
+        for i in range(len(self.datacls.get_questions)):
+            for elem in self.datacls.get_questions[i].values():
                 if callback in elem:
                     self.datacls.animals[elem[callback]]['value'] = self.datacls.animals[elem[callback]]['value'] + 1
-                    return self.datacls.questions.pop(i)
+                    return self.datacls.get_questions.pop(i)
 
     def get_result(self):
         """
