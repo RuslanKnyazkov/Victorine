@@ -1,0 +1,321 @@
+scr.config.logs 2024-10-28 18:03:04,336 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 18:10:40,405 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 22:26:01,128 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 22:26:32,569 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-28 22:26:34,097 ERROR A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 46, in callback_result
+    await tbot.send_message(callback.message.chat.id, text=f'{callback.message}')
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 3274, in send_message
+    await asyncio_helper.send_message(
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 312, in send_message
+    return await _process_request(token, method_name, params=params, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 99, in _process_request
+    raise e
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 95, in _process_request
+    json_result = await _check_result(url, resp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 276, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.asyncio_helper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+scr.config.logs 2024-10-28 22:27:17,493 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 22:27:20,559 ERROR A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 46, in callback_result
+    await tbot.send_message(callback.message.chat.id, text=f'{callback}')
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 3274, in send_message
+    await asyncio_helper.send_message(
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 312, in send_message
+    return await _process_request(token, method_name, params=params, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 99, in _process_request
+    raise e
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 95, in _process_request
+    json_result = await _check_result(url, resp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 276, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.asyncio_helper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+scr.config.logs 2024-10-28 22:27:39,165 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 22:27:57,193 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 22:28:54,965 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 23:58:14,412 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 23:58:23,678 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 23:58:57,791 INFO Log file scr.config.logs
+scr.config.logs 2024-10-28 23:59:49,217 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:00:43,608 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:00:59,313 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:01:36,752 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:01:58,467 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:02:53,018 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:04:20,698 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:04:23,199 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:05:48,594 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:06:08,934 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:12:17,045 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:12:29,664 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:13:09,574 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:13:52,862 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:14:39,863 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:14:47,722 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:16:19,587 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:16:24,598 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:18:25,758 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:18:36,011 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:18:39,212 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:19:06,841 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:19:10,699 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:25:09,433 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:25:12,775 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:25:29,522 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:25:45,561 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:25:51,146 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:26:05,535 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:26:28,402 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:26:32,723 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:26:44,052 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:30:47,616 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:31:04,753 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:31:18,981 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:31:35,567 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:31:38,318 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:31:39,616 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    # DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:31:50,840 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:31:55,302 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    # DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:31:57,603 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:32:13,676 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    # DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:33:42,781 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:33:46,717 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:34:06,961 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    # DataBase().update_reviews(param=(callback.messge.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:35:18,862 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:35:22,217 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:35:37,432 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    DataBase().update_reviews(param=(callback.message.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:35:42,331 ERROR 'CallbackQuery' object has no attribute 'messge'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 50, in callback_result
+    DataBase().update_reviews(param=(callback.message.chat.first_name,
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'messge'. Did you mean: 'message'?
+scr.config.logs 2024-10-29 00:37:55,047 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:37:58,543 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:38:16,167 ERROR table reviews has no column named User_id
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 29, in update_reviews
+    self.cur.execute(f"""INSERT INTO reviews (User_id, User_first_name, User_last_name,
+sqlite3.OperationalError: table reviews has no column named User_id
+scr.config.logs 2024-10-29 00:40:04,935 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:40:08,000 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:43:17,146 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:43:23,896 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:43:46,769 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:43:56,282 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 00:45:58,958 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:46:11,811 ERROR A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong padding in the string
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 59, in callback_result
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 4220, in send_sticker
+    await asyncio_helper.send_data(
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 1032, in send_data
+    return await _process_request(token, method_url, params=payload, files=files, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 99, in _process_request
+    raise e
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 95, in _process_request
+    json_result = await _check_result(url, resp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 276, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.asyncio_helper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong padding in the string
+scr.config.logs 2024-10-29 00:46:46,894 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:46:49,873 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 00:46:51,471 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:20:29,282 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:20:48,158 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:21:51,459 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:21:58,013 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:25:10,131 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:25:14,756 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:25:29,085 ERROR no such table: review
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 31, in update_reviews
+    self.cur.execute(f"""INSERT INTO review (User_first_name,
+sqlite3.OperationalError: no such table: review
+scr.config.logs 2024-10-29 13:26:31,143 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:26:36,298 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:26:53,065 ERROR no such table: review
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 31, in update_reviews
+    self.cur.execute(f"""INSERT INTO review (User_first_name,
+sqlite3.OperationalError: no such table: review
+scr.config.logs 2024-10-29 13:28:05,691 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:33:59,423 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:34:02,366 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:34:27,192 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:34:29,901 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:39:31,566 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:39:35,079 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:44:15,139 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:44:31,344 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:44:36,931 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:44:49,478 ERROR A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong padding in the string
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 66, in callback_result
+    await tbot.send_sticker(chat_id=callback.message.chat.id, sticker=f'{result[0][1]}')
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 4220, in send_sticker
+    await asyncio_helper.send_data(
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 1032, in send_data
+    return await _process_request(token, method_url, params=payload, files=files, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 99, in _process_request
+    raise e
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 95, in _process_request
+    json_result = await _check_result(url, resp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 276, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.asyncio_helper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong padding in the string
+scr.config.logs 2024-10-29 13:47:41,369 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:47:44,257 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:50:54,563 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:51:00,039 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:52:19,034 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:52:21,991 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:52:34,914 ERROR A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong padding in the string
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 63, in callback_result
+    await tbot.send_sticker(chat_id=callback.message.chat.id, sticker=f'{result[0][1]}')
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 4220, in send_sticker
+    await asyncio_helper.send_data(
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 1032, in send_data
+    return await _process_request(token, method_url, params=payload, files=files, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 99, in _process_request
+    raise e
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 95, in _process_request
+    json_result = await _check_result(url, resp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 276, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.asyncio_helper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong padding in the string
+scr.config.logs 2024-10-29 13:53:50,450 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:53:54,820 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:58:06,185 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:58:09,702 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:58:23,462 ERROR 1 values for 2 columns
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 28, in update_reviews
+    self.cur.execute(f"""INSERT INTO reviews (User_first_name,
+sqlite3.OperationalError: 1 values for 2 columns
+scr.config.logs 2024-10-29 13:59:12,069 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 13:59:15,326 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 13:59:31,596 ERROR no such column: ruslan
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 28, in update_reviews
+    self.cur.execute(f"""INSERT INTO reviews (User_first_name,
+sqlite3.OperationalError: no such column: ruslan
+scr.config.logs 2024-10-29 14:09:44,206 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:09:49,223 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:10:59,498 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:11:02,518 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:11:16,920 ERROR execute expected at most 2 arguments, got 3
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 28, in update_reviews
+    self.cur.execute(f"""INSERT INTO reviews (User_first_name,
+TypeError: execute expected at most 2 arguments, got 3
+scr.config.logs 2024-10-29 14:11:57,883 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:12:01,903 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:12:17,002 ERROR execute expected at most 2 arguments, got 3
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 29, in update_reviews
+    self.cur.execute(f"""INSERT INTO reviews (User_first_name,
+TypeError: execute expected at most 2 arguments, got 3
+scr.config.logs 2024-10-29 14:16:58,974 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:17:04,325 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:17:18,928 ERROR execute expected at most 2 arguments, got 3
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 30, in update_reviews
+    self.cur.execute(f"""INSERT INTO reviews (User_first_name,
+TypeError: execute expected at most 2 arguments, got 3
+scr.config.logs 2024-10-29 14:19:05,037 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:19:07,888 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:22:09,986 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:22:13,287 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:23:59,839 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:24:03,222 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:26:24,909 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:26:28,730 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:26:29,631 ERROR 'int' object has no attribute 'message_id'
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 51, in callback_result
+    await tbot.reply_to(callback.message.chat.id, text=f'{callback}')
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 7194, in reply_to
+    message.message_id,
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'message_id'
+scr.config.logs 2024-10-29 14:26:50,601 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:26:53,104 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:30:47,381 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:30:53,751 INFO User Руслан Князьков is logger in.
+scr.config.logs 2024-10-29 14:30:59,074 ERROR A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+Traceback (most recent call last):
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\app\main.py", line 51, in callback_result
+    await tbot.reply_to(callback.message, text=f'{callback}')
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 7201, in reply_to
+    return await self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\async_telebot.py", line 3274, in send_message
+    await asyncio_helper.send_message(
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 312, in send_message
+    return await _process_request(token, method_name, params=params, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 99, in _process_request
+    raise e
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 95, in _process_request
+    json_result = await _check_result(url, resp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\venv\Lib\site-packages\telebot\asyncio_helper.py", line 276, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.asyncio_helper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+scr.config.logs 2024-10-29 14:31:30,416 INFO Log file scr.config.logs
+scr.config.logs 2024-10-29 14:31:33,291 INFO User Руслан Князьков is logger in.

@@ -5,9 +5,12 @@ from key import Key
 from scr.quiz.quiz import Quiz
 from telebot.async_telebot import AsyncTeleBot
 from scr.config.logs import logger
+from scr.quiz.reviews import DataBase
 import asyncio
 
 tbot = AsyncTeleBot(token=TOKEN)
+db = DataBase()
+
 
 @tbot.message_handler(commands=['start', 'restart'])
 async def start_quiz(message):
@@ -20,6 +23,9 @@ async def start_quiz(message):
                                                   f' Хотели бы предложить пройти нашу '
                                                   'викторину на тему "Ваше тотемное животное"',
                             reply_markup=Key().create_key_line(['Я готов'], filters='quiz'))
+    db.connect.execute("""CREATE TABLE IF NOT EXISTS reviews (User_first_name Text, User_last_name Text,
+                        Reviews Text,
+                        Result_quiz Text)""")
     logger.info(f'User {message.from_user.first_name} {message.from_user.last_name} is logger in.')
 
 
@@ -42,9 +48,12 @@ async def callback_result(callback):
             question, answers = str(*collect.keys()), dict(*collect.values())
             await tbot.send_message(callback.message.chat.id, text=f'{question}',
                                     reply_markup=Key().create_key_line(enum=answers, filters='quiz'))
+            #await tbot.reply_to(callback.message, text=f'{callback}')
 
         elif not quiz.is_empty():
             result = quiz.get_result()
+            db.update_reviews(param=(callback.from_user.first_name,
+                                    callback.from_user.last_name))
             await tbot.send_message(chat_id=callback.message.chat.id,
                                     text=f'Поздравляем мы закончили и теперь можем точно сказать, что ваше тотемное '
                                          f'животное это <b>{result[0][0]}.</b>\n'
@@ -60,7 +69,7 @@ async def callback_result(callback):
                                          'жмите кнопку и вперед.',
                                     reply_markup=Key().create_key_line(['Попробовать заново'], filters='quiz'))
     except Exception as error:
-        await tbot.send_message(callback.message.chat.id, text= f'Нам очень жаль , но что то поломалось.')
+        await tbot.send_message(callback.message.chat.id, text=f'Нам очень жаль , но что то поломалось.')
         await tbot.send_sticker(callback.message.chat.id,
                                 sticker='CAACAgIAAxkBAAIE7Gceg2rPAxAMjqn7IFPQlsW-bLDSAAJtAAOWn4wOh4Xo4eaCW_02BA')
         logger.exception(f'{error}')
@@ -82,6 +91,7 @@ async def show_description(callback):
 async def handler_text(message):
     await tbot.send_message(message.chat.id, text='Извините я не смог распознать ваше сообщение.'
                                                   ' Пожалуйста обратитесь к справочнику через команду /info')
+
 
 # @tbot.message_handler(content_types=['sticker'])
 # async def handler_s(message):
