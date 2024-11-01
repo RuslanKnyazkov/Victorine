@@ -2,8 +2,6 @@ from copy import deepcopy
 import telebot.types
 from scr.quiz.question import questions
 from random import choice
-from scr.config.logs import logger
-
 class Animal:
     def __init__(self):
         self.animals = {'Тигр':

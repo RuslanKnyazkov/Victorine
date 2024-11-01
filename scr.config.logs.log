@@ -1,6 +1,0 @@
-scr.config.logs 2024-10-29 14:13:27,154 INFO Log file scr.config.logs
-scr.config.logs 2024-10-29 14:14:01,314 ERROR execute expected at most 2 arguments, got 3
-Traceback (most recent call last):
-  File "C:\Users\ruskn\OneDrive\Рабочий стол\ProjectZoo\scr\quiz\reviews.py", line 29, in update_reviews
-    self.cur.execute(f"""INSERT INTO reviews (User_first_name,
-TypeError: execute expected at most 2 arguments, got 3
