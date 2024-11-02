@@ -6,6 +6,8 @@ from telebot.async_telebot import AsyncTeleBot
 from scr.config.logs import logger
 from scr.quiz.reviews import DataBase
 import asyncio
+from scr.app.smtp import send_mail
+
 
 tbot = AsyncTeleBot(token=TOKEN)
 db = DataBase()
@@ -37,8 +39,45 @@ async def get_info(message):
                                                   'Данный бот имеет в наличие такие команды как:\n'
                                                   '/start - Запускает викторину на тему Ваше тотемное животное.\n'
                                                   '/info - Информационное сообщение.\n'
+                                                  '/contact - Связаться с нашим сотрудником.'
                                                   'Вы можете оставить свой отзыв начав сообщение с "Мой отзыв"')
     logger.info(f'User {message.from_user.first_name} {message.from_user.last_name} called info.')
+
+
+@tbot.message_handler(commands=['contact'])
+async def create_request(message):
+    with db.connect:
+        user = db.cursor.execute(f"""SELECT user_id FROM user WHERE user_id={message.from_user.id}""")
+        if user.fetchone() is None:
+            await tbot.send_message(message.chat.id, text='Пожалуйста для начала пройдите нашу викторину.')
+        else:
+            await tbot.send_message(message.chat.id, text='Вы желаете связаться с нашим сотрудником.',
+                                    reply_markup=Key().create_key_line(['Да', 'Нет'], filters='contact'))
+    logger.info(f'User {message.from_user.first_name} trying contact')
+
+
+@tbot.callback_query_handler(func=lambda callback: callback.data.split(':')[-1] == 'contact')
+async def confirm_contact(callback):
+    if 'Да' in callback.data:
+        try:
+            with db.connect:
+                sql_result = db.cursor.execute(f"""SELECT * FROM result_quiz WHERE user_id={callback.message.chat.id}""")
+                values = []
+                for i in sql_result.fetchone():
+                    values.append(i)
+                await send_mail(subject='Need contact', msg=f'<h1>Поступил запрос для уточнения информации.</h1>\n'
+                                                            f'<p1>Контактные данные {values[1]} {values[2]}.\n'
+                                                            f'Результат викторины {values[3]}')
+                await tbot.send_message(callback.message.chat.id,
+                                        text='Запрос отправлен. Ожидайте скоро с вами свяжутся.')
+            logger.info('User send request.')
+        except Exception as e:
+            await tbot.send_message(callback.message.chat.id, text=f'Пожалуйста для начала пройдите викторину.\n'
+                                                                   f'Начать ее можно с помощью /start')
+            logger.info(f'{e}\n'
+                        f'User trying add request without passed victorine')
+    elif 'Нет' in callback.data:
+        await tbot.send_message(callback.message.chat.id, text='Запрос отменен.')
 
 
 @tbot.callback_query_handler(func=lambda callback: callback.data.split(':')[-1] == 'quiz')
@@ -99,7 +138,10 @@ async def show_description(callback):
 
 
 @tbot.message_handler(content_types=['text'])
-async def handler_text(message):
+async def find_some_text(message):
+    """
+    Handler some text.
+    """
     if 'отзыв' in message.text.lower():
         with db.connect:
             db.cursor.execute("""INSERT INTO review VALUES (?,?,?,?)""", (message.from_user.id,

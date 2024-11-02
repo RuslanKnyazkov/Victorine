@@ -2,7 +2,7 @@ from copy import deepcopy
 import telebot.types
 from scr.quiz.question import questions
 from random import choice
-class Animal:
+class Data:
     def __init__(self):
         self.animals = {'Тигр':
                             {'value': 0,
@@ -32,7 +32,7 @@ class Quiz:
     Class for victorine
     """
 
-    datacls = Animal()
+    datacls = Data()
 
     @classmethod
     def restart(cls):
@@ -41,7 +41,7 @@ class Quiz:
         """
         if cls.datacls is not None:
             cls.datacls = None
-        cls.datacls = Animal()
+        cls.datacls = Data()
 
     def is_empty(self) -> bool:
         """
